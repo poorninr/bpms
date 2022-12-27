@@ -84,8 +84,8 @@ error_reporting(0);
     				<div class="project">
 	    				<img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
+	    					<span>Hair</span>
+	    					<h3>Stylist</h3>
 	    				</div>
 	    				<a href="images/work-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
@@ -94,12 +94,12 @@ error_reporting(0);
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/stylist-5.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
+	    					<span>Hair</span>
+	    					<h3>Stylist</h3>
 	    				</div>
-	    				<a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/stylist-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
@@ -108,8 +108,8 @@ error_reporting(0);
     				<div class="project">
 	    				<img src="images/work-5.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
-	    					<span>Beauty</span>
-	    					<h3>Makeup</h3>
+	    					<span>Fashion</span>
+	    					<h3>Model</h3>
 	    				</div>
 	    				<a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
@@ -118,12 +118,12 @@ error_reporting(0);
     			</div>
     			<div class="col-md-6 col-lg-3 ftco-animate">
     				<div class="project">
-	    				<img src="images/work-6.jpg" class="img-fluid" alt="Colorlib Template">
+	    				<img src="images/person_4.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
-	    					<span>Fashion</span>
-	    					<h3>Model</h3>
+	    					<span>Hair</span>
+	    					<h3>Care</h3>
 	    				</div>
-	    				<a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+	    				<a href="images/person_4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
     				</div>
@@ -144,7 +144,7 @@ error_reporting(0);
     				<div class="project">
 	    				<img src="images/work-8.jpg" class="img-fluid" alt="Colorlib Template">
 	    				<div class="text">
-	    					<span>Beauty</span>
+	    					<span>Stylist Trendy</span>
 	    					<h3>Makeup</h3>
 	    				</div>
 	    				<a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">

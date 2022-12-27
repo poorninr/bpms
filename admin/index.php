@@ -57,7 +57,7 @@ if(isset($_POST['login']))
 		<!-- main content start-->
 		<div id="page-wrapper">
 			<div class="main-page login-page ">
-				<h3 class="title1">SignIn Page</h3>
+				<h3 class="title1">Sign In Page</h3>
 				<div class="widget-shadow">
 					<div class="login-top">
 						<h4>Welcome back to BPIMS AdminPanel ! </h4>
@@ -67,7 +67,7 @@ if(isset($_POST['login']))
 							<p style="font-size:16px; color:red" align="center"> <?php if($msg){
     echo $msg;
   }  ?> </p>
-							<input type="text" class="user" name="username" placeholder="Username" required="true">
+							<input type="text" class="user" name="username" placeholder="Username" required="false">
 							<input type="password" name="password" class="lock" placeholder="Password" required="true">
 							<input type="submit" name="login" value="Sign In">
 							<div class="forgot-grid">

@@ -166,7 +166,7 @@ if($row['Status']=="2")
   </tr>
 
   <tr align="center">
-    <td colspan="2"><button type="submit" name="submit" class="btn btn-az-primary pd-x-20">Submit</button></td>
+    <td colspan="2"><button type="submit" name="submit" class="btn-az-primary pd-x-20">Submit</button></td>
   </tr>
   </form>
 <?php } else { ?>

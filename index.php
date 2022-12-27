@@ -3,9 +3,10 @@ include('includes/dbconnection.php');
 session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
-if(isset($_POST['submit']))
-  {
+	
 
+if(isset($_POST['submit'])) {
+try {
     $name=$_POST['name'];
     $email=$_POST['email'];
     $services=$_POST['services'];
@@ -14,7 +15,7 @@ if(isset($_POST['submit']))
     $phone=$_POST['phone'];
     $aptnumber = mt_rand(100000000, 999999999);
   
-    $query=mysqli_query($con,"insert into tblappointment(AptNumber,Name,Email,PhoneNumber,AptDate,AptTime,Services) value('$aptnumber','$name','$email','$phone','$adate','$atime','$services')");
+    $query=mysqli_query($con,"insert into tblappointment(AptNumber,Name,Email,PhoneNumber,AptDate,AptTime,Services,Remark,Status) value('$aptnumber','$name','$email','$phone','$adate','$atime','$services','','')");
     if ($query) {
 $ret=mysqli_query($con,"select AptNumber from tblappointment where Email='$email' and  PhoneNumber='$phone'");
 $result=mysqli_fetch_array($ret);
@@ -25,9 +26,15 @@ $_SESSION['aptno']=$result['AptNumber'];
     {
       $msg="Something Went Wrong. Please try again";
     }
+}
 
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
   
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -63,7 +70,7 @@ $_SESSION['aptno']=$result['AptNumber'];
     <!-- END nav -->
 
 	<section id="home-section" class="hero" style="background-image: url(images/bg.jpg);">
-		  <div class="home-slider owl-carousel">
+	<div class="home-slider owl-carousel">	 
 	      <!-- <div class="slider-item js-fullheight">
 	      	<div class="overlay"></div>
 	        <div class="container-fluid p-0">
@@ -82,10 +89,10 @@ $_SESSION['aptno']=$result['AptNumber'];
 	        </div>
 	      </div> -->
 
-	      <div class="slider-item js-fullheight">
+		  <div class="slider-item js-fullheight">
 	        <div class="container-fluid p-0">
-	          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third align-self-end order-md-last img-fluid" src="images/bg_4.jpg" alt="">
+			   <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                <img class="one-third align-self-end order-md-last img-fluid" src="images/bg_4.jpg" alt="">
 		          <div class="one-forth d-flex align-items-left ftco-animate" data-scrollax=" properties: { translateY: '80%' }">
 					  <div class="text mr-5">
 		          		<span class="subheading">Natural Beauty</span>
@@ -96,7 +103,7 @@ $_SESSION['aptno']=$result['AptNumber'];
 			           
 		            </div>
 		          </div>
-	        	</div>
+				</div>  
 	        </div>
 	      </div>
 	    </div>
@@ -157,9 +164,10 @@ $_SESSION['aptno']=$result['AptNumber'];
 			                </div>
 			              </div>
 				          </div>
-				          <div class="form-group">
-			              <input type="submit" name="submit" value="Make an Appointment" class="btn btn-primary">
-			            </div>
+						  <div class="form-group">
+<input type="submit" name="submit" value="Make an Appointment" class="btn btn-primary">
+</div>
+
 			          </form>
 		          </div>
 						</div>
@@ -170,8 +178,7 @@ $_SESSION['aptno']=$result['AptNumber'];
 					</div>
     		</div>
     	</div>
-    </section>
-
+    </section>   
 		
 		<br>
 
